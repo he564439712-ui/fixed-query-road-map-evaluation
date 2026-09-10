@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the archived v1.0.0 release."
+title: "Fixed-query route outcomes beyond aggregate road-map scores: research software and frozen numerical evidence"
+type: software
+authors:
+  - family-names: "Liu"
+    given-names: "He"
+repository-code: "https://github.com/he564439712-ui/fixed-query-road-map-evaluation"
+version: "1.0.0"
+date-released: "2026-09-10"
+license: MIT
+keywords:
+  - remote sensing
+  - road extraction
+  - route planning
+  - topology
+  - uncertainty
+  - reproducibility
+abstract: >-
+  Code and frozen numerical evidence for controlled, fixed-query evaluation
+  of route outcomes beyond aggregate road-product metrics.

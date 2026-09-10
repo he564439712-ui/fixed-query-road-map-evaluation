@@ -1,0 +1,6 @@
+* text=auto eol=lf
+*.csv text eol=lf
+*.json text eol=lf
+*.cff text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf

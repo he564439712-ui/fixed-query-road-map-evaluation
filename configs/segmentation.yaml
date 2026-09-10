@@ -1,0 +1,44 @@
+# Segmentation model and training configuration
+
+model:
+  name: unet
+  # Options: unet, dlinknet
+  in_channels: 3
+  out_channels: 1
+  base_channels: 64  # standard U-Net; TinyUNet demo used 12
+  dropout_p: 0.0     # 0.0 for base model; set >0 for MC Dropout variant
+  bilinear: true
+
+training:
+  epochs: 100
+  batch_size: 4
+  gradient_accumulation_steps: 4  # effective batch = 4*4 = 16
+  learning_rate: 1e-4
+  weight_decay: 1e-5
+  amp: true  # automatic mixed precision
+  patience: 15  # early stopping patience
+  min_delta: 1e-4
+
+loss:
+  bce_weight: 1.0
+  dice_weight: 1.0
+  pos_weight_max: 8.0  # cap on BCE pos_weight
+
+optimizer:
+  name: adamw
+  betas: [0.9, 0.999]
+
+scheduler:
+  name: cosine
+  warmup_epochs: 5
+  min_lr: 1e-6
+
+inference:
+  patch_size: 512
+  overlap: 96
+  batch_size: 8
+  threshold: 0.5
+
+# The demo used resize-to-512 for quick experiments.
+# For final results, use sliding-window on 1500×1500.
+# Do NOT resize full images for evaluation.

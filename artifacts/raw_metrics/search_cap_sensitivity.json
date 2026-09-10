@@ -1,0 +1,95 @@
+{
+  "primary_cap": 200000,
+  "interpretation": "Diagnostic only; the frozen primary results retain the 200k cap. Failure under a finite cap is planner non-completion, not proof of structural disconnection.",
+  "caps": {
+    "100k": {
+      "Soft-probability A*": {
+        "n": 945,
+        "success_count": 551,
+        "success_rate": 0.5830687830687831,
+        "rerun_max_expanded": null
+      },
+      "Topology+Risk A*": {
+        "n": 945,
+        "success_count": 538,
+        "success_rate": 0.5693121693121693,
+        "rerun_max_expanded": null
+      },
+      "GT Oracle A*": {
+        "n": 945,
+        "success_count": 866,
+        "success_rate": 0.9164021164021164,
+        "rerun_max_expanded": null
+      },
+      "proposed_minus_soft": -0.013756613756613745
+    },
+    "200k": {
+      "Soft-probability A*": {
+        "n": 945,
+        "success_count": 613,
+        "success_rate": 0.6486772486772486,
+        "rerun_max_expanded": null
+      },
+      "Topology+Risk A*": {
+        "n": 945,
+        "success_count": 656,
+        "success_rate": 0.6941798941798942,
+        "rerun_max_expanded": null
+      },
+      "GT Oracle A*": {
+        "n": 945,
+        "success_count": 938,
+        "success_rate": 0.9925925925925926,
+        "rerun_max_expanded": null
+      },
+      "proposed_minus_soft": 0.0455026455026456
+    },
+    "500k": {
+      "Soft-probability A*": {
+        "n": 945,
+        "success_count": 627,
+        "success_rate": 0.6634920634920635,
+        "rerun_max_expanded": 298414
+      },
+      "Topology+Risk A*": {
+        "n": 945,
+        "success_count": 686,
+        "success_rate": 0.725925925925926,
+        "rerun_max_expanded": 415129
+      },
+      "GT Oracle A*": {
+        "n": 945,
+        "success_count": 945,
+        "success_rate": 1.0,
+        "rerun_max_expanded": 241226
+      },
+      "proposed_minus_soft": 0.06243386243386251
+    },
+    "unlimited": {
+      "Soft-probability A*": {
+        "n": 945,
+        "success_count": 627,
+        "success_rate": 0.6634920634920635,
+        "rerun_max_expanded": 298414
+      },
+      "Topology+Risk A*": {
+        "n": 945,
+        "success_count": 686,
+        "success_rate": 0.725925925925926,
+        "rerun_max_expanded": 415129
+      },
+      "GT Oracle A*": {
+        "n": 945,
+        "success_count": 945,
+        "success_rate": 1.0,
+        "rerun_max_expanded": 241226
+      },
+      "proposed_minus_soft": 0.06243386243386251
+    }
+  },
+  "primary_cap_limited_failures": {
+    "Soft-probability A*": 14,
+    "Topology+Risk A*": 30,
+    "GT Oracle A*": 7
+  }
+}

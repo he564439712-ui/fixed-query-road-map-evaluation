@@ -1,0 +1,36 @@
+# Path planning configuration
+
+planner:
+  name: astar
+  heuristic_weight: 1.0
+  neighbor_mode: 8  # 8-connected grid
+
+cost:
+  lambda_r: 2.0     # risk weight: -log(q(x))
+  lambda_b: 1.0     # boundary penalty weight
+  tau_d: 5.0        # distance decay for boundary penalty (pixels)
+  delta_s: 1.0      # base step cost
+
+baselines:
+  - name: gt_oracle_astar
+    description: A* on GT mask (upper bound only)
+  - name: binary_mask_astar
+    description: A* on thresholded binary mask
+  - name: soft_probability_astar
+    description: A* with cost = -log(p)
+  - name: clearance_aware_astar
+    description: A* with boundary distance penalty
+  - name: entropy_penalized_astar
+    description: Entropy-penalized A* (internal control; not a URA* reproduction)
+  - name: topology_repair_astar
+    description: "Controlled condition: topology repair + unified risk A*"
+
+queries:
+  per_image: 20  # requested maximum; some sparse images yield fewer valid pairs
+  total: 945  # frozen Massachusetts artifact: 49 images, 13--20 valid pairs/image
+  short_ratio: 0.30   # ~6 per image
+  medium_ratio: 0.37  # ~7 per image
+  long_ratio: 0.33    # ~7 per image
+  snap_radius: 8       # pixels; snap start/goal to nearest road
+  min_road_pixels: 100  # minimum road pixels in image to be eligible
+  seed: 2025           # fixed for reproducibility

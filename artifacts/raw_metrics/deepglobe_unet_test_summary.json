@@ -1,0 +1,33 @@
+{
+  "dataset": "DeepGlobe Road Extraction",
+  "split": "held-out deterministic test split",
+  "n_images": 624,
+  "model": "unet",
+  "checkpoint": "artifacts/checkpoints/deepglobe_unet_seed42_fast/best_model.pt",
+  "threshold": 0.5,
+  "tile_size": 512,
+  "overlap": 96,
+  "bootstrap_samples": 2000,
+  "metrics": {
+    "dice": {
+      "mean": 0.7040505145800464,
+      "ci95": [0.6943430546120162, 0.7135590397180684]
+    },
+    "iou": {
+      "mean": 0.556481106417659,
+      "ci95": [0.5450527097869324, 0.5675539634110804]
+    },
+    "precision": {
+      "mean": 0.6128706946672537,
+      "ci95": [0.6011596713917622, 0.6247744114845272]
+    },
+    "recall": {
+      "mean": 0.8695491663007948,
+      "ci95": [0.8612514013337048, 0.8781252158901799]
+    },
+    "cldice": {
+      "mean": 0.7630601813587,
+      "ci95": [0.7517420059660851, 0.7744175166883425]
+    }
+  }
+}

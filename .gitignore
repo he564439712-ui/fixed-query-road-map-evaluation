@@ -1,0 +1,27 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+.idea/
+.vscode/
+
+# Raw datasets, trained models, predictions, and generated outputs.
+data/
+tiff/
+checkpoints/
+predictions/
+runs/
+outputs/
+paper/
+artifacts/*
+!artifacts/raw_metrics/
+!artifacts/raw_metrics/**
+
+# Local environment and logs.
+.env
+*.log
+*.err
+*.out

@@ -1,0 +1,42 @@
+# Data configuration — Massachusetts Roads Dataset (Mnih)
+# Total: 1171 image-mask pairs (1500×1500)
+# Splits: 1108 train → 998 seg_train + 110 calibration | 14 val | 49 test
+
+dataset:
+  name: massachusetts_roads
+  root: .
+  image_dir: tiff
+  image_ext: .tiff
+  label_dir: tiff
+  label_suffix: _labels
+  label_ext: .tif
+  image_channels: 3
+  num_classes: 1  # binary road / non-road
+
+splits:
+  train_images: 1108
+  val_images: 14
+  test_images: 49
+  # From 1108 training images, hold out 110 for calibration
+  calibration_count: 110
+  train_count: 998
+  calibration_seed: 42
+  train_seeds: [42, 123, 456]  # 3 training seeds for Deep Ensemble
+
+tiling:
+  full_size: [1500, 1500]
+  patch_size: 512
+  overlap: 96  # pixels overlap between adjacent sliding windows
+  batch_size: 4
+  num_workers: 4
+
+augmentation:
+  hflip: true
+  vflip: true
+  rotate_90: true
+  brightness_jitter: 0.1
+  contrast_jitter: 0.1
+  saturation_jitter: 0.05
+
+# For final evaluation, use sliding-window inference on full 1500×1500 images.
+# Do NOT resize full images for final metric computation.

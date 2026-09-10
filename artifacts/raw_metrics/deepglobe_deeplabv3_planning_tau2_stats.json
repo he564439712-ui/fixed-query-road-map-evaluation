@@ -1,0 +1,149 @@
+{
+  "validation": {
+    "total_rows": 63720,
+    "rows_per_method": {
+      "Binary-mask A*": 10620,
+      "Clearance-aware A*": 10620,
+      "GT Oracle A*": 10620,
+      "Soft-probability A*": 10620,
+      "Topology+Risk A*": 10620,
+      "URA-style A*": 10620
+    },
+    "n_images": 624
+  },
+  "contrast_sign": "Topology+Risk minus baseline; negative off-road is better",
+  "contrasts": {
+    "Binary-mask A*": {
+      "contrast": "Topology+Risk A* minus Binary-mask A*",
+      "success": {
+        "n_images": 624,
+        "mean_difference": 0.013530249271646033,
+        "ci95": [
+          0.00716563768973941,
+          0.02025917017408667
+        ],
+        "paired_t_p": 6.946880325722639e-05,
+        "wilcoxon_p": 0.00013827202185031143
+      },
+      "safe_success_0.05": {
+        "n_images": 624,
+        "mean_difference": 0.5866450859726788,
+        "ci95": [
+          0.5620705439490093,
+          0.6105214311955872
+        ],
+        "paired_t_p": 5.191399195595211e-207,
+        "wilcoxon_p": 1.296129793764167e-97
+      },
+      "off_road_common_success": {
+        "n_images": 616,
+        "mean_difference": -0.3041460895192927,
+        "ci95": [
+          -0.31740926501202327,
+          -0.29054581803258356
+        ],
+        "paired_t_p": 9.237720715837822e-190,
+        "wilcoxon_p": 5.886684563132794e-99
+      }
+    },
+    "Clearance-aware A*": {
+      "contrast": "Topology+Risk A* minus Clearance-aware A*",
+      "success": {
+        "n_images": 624,
+        "mean_difference": 0.017861389622523226,
+        "ci95": [
+          0.011922681117708953,
+          0.024434229410190945
+        ],
+        "paired_t_p": 3.302140949630627e-08,
+        "wilcoxon_p": 1.4797638900633255e-10
+      },
+      "safe_success_0.05": {
+        "n_images": 624,
+        "mean_difference": 0.020877811856318644,
+        "ci95": [
+          0.01497294619501916,
+          0.027180297431640757
+        ],
+        "paired_t_p": 6.424591527408225e-11,
+        "wilcoxon_p": 1.1989772993386144e-13
+      },
+      "off_road_common_success": {
+        "n_images": 616,
+        "mean_difference": -0.0027615192535183695,
+        "ci95": [
+          -0.003886593524037436,
+          -0.001733122694490134
+        ],
+        "paired_t_p": 5.430796592575182e-07,
+        "wilcoxon_p": 1.868269805337924e-28
+      }
+    },
+    "Soft-probability A*": {
+      "contrast": "Topology+Risk A* minus Soft-probability A*",
+      "success": {
+        "n_images": 624,
+        "mean_difference": 0.01762100500713861,
+        "ci95": [
+          0.011642942616500309,
+          0.024231064297170066
+        ],
+        "paired_t_p": 6.64679627479792e-08,
+        "wilcoxon_p": 9.513073277069478e-10
+      },
+      "safe_success_0.05": {
+        "n_images": 624,
+        "mean_difference": 0.07513501220373392,
+        "ci95": [
+          0.060440143819417536,
+          0.09041270091296419
+        ],
+        "paired_t_p": 3.092524996966765e-21,
+        "wilcoxon_p": 3.855567297292002e-26
+      },
+      "off_road_common_success": {
+        "n_images": 616,
+        "mean_difference": -0.010160793848817247,
+        "ci95": [
+          -0.013181576076243677,
+          -0.007035799951573693
+        ],
+        "paired_t_p": 1.5745622453881667e-10,
+        "wilcoxon_p": 7.07356576944888e-34
+      }
+    },
+    "URA-style A*": {
+      "contrast": "Topology+Risk A* minus URA-style A*",
+      "success": {
+        "n_images": 624,
+        "mean_difference": 0.015697928084061688,
+        "ci95": [
+          0.009590010566731214,
+          0.022359130913976562
+        ],
+        "paired_t_p": 2.1390780044412307e-06,
+        "wilcoxon_p": 5.705020012819778e-07
+      },
+      "safe_success_0.05": {
+        "n_images": 624,
+        "mean_difference": 0.01869744309108592,
+        "ci95": [
+          0.005972014885069891,
+          0.03161790936041501
+        ],
+        "paired_t_p": 0.004509325103463941,
+        "wilcoxon_p": 0.002209736921320541
+      },
+      "off_road_common_success": {
+        "n_images": 616,
+        "mean_difference": -0.0024423622202243028,
+        "ci95": [
+          -0.006756854980348735,
+          0.0008787168136431784
+        ],
+        "paired_t_p": 0.2028612931108517,
+        "wilcoxon_p": 0.00011578304938977093
+      }
+    }
+  }
+}

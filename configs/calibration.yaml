@@ -1,0 +1,31 @@
+# Uncertainty estimation and probability calibration
+
+uncertainty:
+  # Main results: Deep Ensemble (3 members)
+  # Development: MC Dropout
+  method: deep_ensemble  # Options: deep_ensemble, mc_dropout
+  ensemble_size: 3
+  mc_samples: 30        # for MC Dropout only
+  mc_dropout_p: 0.2     # dropout rate for MC Dropout
+
+calibration:
+  method: temperature_scaling
+  # Temperature T_c optimized on the 110-image calibration set
+  init_temperature: 1.0
+  learning_rate: 0.01
+  max_iter: 100
+
+conservative_bound:
+  kappa: 1.0           # project-plan default; verified on calibration set
+                       # (scripts/sweep_planning_cal.py: kappa=0.5-1.0 both beat
+                       #  soft-prob success; kappa=2.0 reduces reachability)
+  epsilon: 1e-6        # numerical stability floor
+
+evaluation:
+  num_bins: 15          # for ECE / reliability diagrams
+  metrics:
+    - ece
+    - brier
+    - nll
+    - auroc_error       # uncertainty → error detection AUROC
+    - auprc_error        # uncertainty → error detection AUPRC

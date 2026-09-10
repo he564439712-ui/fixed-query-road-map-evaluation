@@ -1,0 +1,52 @@
+# Ablation experiment configuration
+
+ablations:
+  calibration:
+    - name: no_calibration
+      description: Use raw (uncalibrated) probabilities
+      changes: { calibration.method: none }
+    - name: no_epistemic
+      description: Remove epistemic uncertainty term (κ=0)
+      changes: { conservative_bound.kappa: 0.0 }
+
+  ensemble:
+    - name: mc_dropout
+      description: Replace Deep Ensemble with MC Dropout
+      changes: { uncertainty.method: mc_dropout }
+
+  topology_constraints:
+    - name: no_direction_constraint
+      description: Remove direction consistency check (w_θ=0)
+      changes: { topology_repair.cost_weights.w_theta: 0.0 }
+    - name: no_width_constraint
+      description: Remove width consistency check (w_w=0)
+      changes: { topology_repair.cost_weights.w_w: 0.0 }
+    - name: no_connectivity_gain
+      description: Remove connectivity gain reward (w_g=0)
+      changes: { topology_repair.cost_weights.w_g: 0.0 }
+
+  repair_strategy:
+    - name: probability_only_repair
+      description: Use raw probability only for repair (no uncertainty)
+      changes: { topology_repair.cost_weights.w_p: 1.0, calibration.method: none }
+    - name: topology_only_repair
+      description: Use only geometric/topological cues for repair
+      changes: { topology_repair.cost_weights.w_p: 0.0 }
+
+  planning_strategy:
+    - name: risk_only_planning
+      description: Risk-aware planning without topology repair
+      changes: { planning.planner: risk_only }
+    - name: repair_and_risk_planning
+      description: Full proposed method (topology repair + risk planning)
+
+  parameter_sweep:
+    - name: radius_sweep
+      parameter: topology_repair.candidate_generation.max_radius
+      values: [20, 30, 40, 50, 60, 80]
+    - name: threshold_sweep
+      parameter: topology_repair.acceptance.tau
+      values: [1.0, 1.5, 2.0, 2.5, 3.0, 4.0]
+    - name: kappa_sweep
+      parameter: calibration.conservative_bound.kappa
+      values: [0.0, 0.5, 1.0, 1.5, 2.0, 3.0]

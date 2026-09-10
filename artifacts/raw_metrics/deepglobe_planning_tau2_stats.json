@@ -1,0 +1,185 @@
+{
+  "validation": {
+    "total_rows": 63720,
+    "rows_per_method": {
+      "Binary-mask A*": 10620,
+      "Clearance-aware A*": 10620,
+      "GT Oracle A*": 10620,
+      "Soft-probability A*": 10620,
+      "Topology+Risk A*": 10620,
+      "URA-style A*": 10620
+    },
+    "n_images": 624
+  },
+  "contrast_sign": "Topology+Risk minus baseline; negative off-road is better",
+  "contrasts": {
+    "Binary-mask A*": {
+      "contrast": "Topology+Risk A* minus Binary-mask A*",
+      "success": {
+        "n_images": 624,
+        "bootstrap_replicates": 10000,
+        "bootstrap_seed": 2025,
+        "ci_type": "two-sided percentile interval",
+        "mean_difference": 0.027844449583442493,
+        "ci95": [
+          0.019409466076897124,
+          0.0366579716930805
+        ],
+        "paired_t_p": 7.652470530221802e-10,
+        "wilcoxon_p": 9.62265346994552e-11
+      },
+      "safe_success_0.05": {
+        "n_images": 624,
+        "bootstrap_replicates": 10000,
+        "bootstrap_seed": 2025,
+        "ci_type": "two-sided percentile interval",
+        "mean_difference": 0.560127870642837,
+        "ci95": [
+          0.5352803494399568,
+          0.5851908484690658
+        ],
+        "paired_t_p": 1.2554146662037227e-191,
+        "wilcoxon_p": 4.002577764591304e-95
+      },
+      "off_road_common_success": {
+        "n_images": 608,
+        "bootstrap_replicates": 10000,
+        "bootstrap_seed": 2025,
+        "ci_type": "two-sided percentile interval",
+        "mean_difference": -0.29243992609926117,
+        "ci95": [
+          -0.30661791309755054,
+          -0.27827774583281256
+        ],
+        "paired_t_p": 2.1238048938777925e-174,
+        "wilcoxon_p": 1.055343171373459e-97
+      }
+    },
+    "Clearance-aware A*": {
+      "contrast": "Topology+Risk A* minus Clearance-aware A*",
+      "success": {
+        "n_images": 624,
+        "bootstrap_replicates": 10000,
+        "bootstrap_seed": 2025,
+        "ci_type": "two-sided percentile interval",
+        "mean_difference": 0.032095461729191484,
+        "ci95": [
+          0.023850651241845575,
+          0.04068756160489776
+        ],
+        "paired_t_p": 5.057968972451791e-13,
+        "wilcoxon_p": 2.5790902441497653e-17
+      },
+      "safe_success_0.05": {
+        "n_images": 624,
+        "bootstrap_replicates": 10000,
+        "bootstrap_seed": 2025,
+        "ci_type": "two-sided percentile interval",
+        "mean_difference": 0.035826080806470484,
+        "ci95": [
+          0.027718519768510284,
+          0.044362602489025814
+        ],
+        "paired_t_p": 4.392012826895764e-16,
+        "wilcoxon_p": 9.04727399700044e-21
+      },
+      "off_road_common_success": {
+        "n_images": 608,
+        "bootstrap_replicates": 10000,
+        "bootstrap_seed": 2025,
+        "ci_type": "two-sided percentile interval",
+        "mean_difference": -0.0029884705454309517,
+        "ci95": [
+          -0.004118824190255847,
+          -0.0020298514760941494
+        ],
+        "paired_t_p": 3.019415863842285e-08,
+        "wilcoxon_p": 1.5387816849314337e-25
+      }
+    },
+    "Soft-probability A*": {
+      "contrast": "Topology+Risk A* minus Soft-probability A*",
+      "success": {
+        "n_images": 624,
+        "bootstrap_replicates": 10000,
+        "bootstrap_seed": 2025,
+        "ci_type": "two-sided percentile interval",
+        "mean_difference": 0.03193520531893508,
+        "ci95": [
+          0.023716051523965238,
+          0.04057210719723372
+        ],
+        "paired_t_p": 8.894395161540713e-13,
+        "wilcoxon_p": 1.5484941001791572e-16
+      },
+      "safe_success_0.05": {
+        "n_images": 624,
+        "bootstrap_replicates": 10000,
+        "bootstrap_seed": 2025,
+        "ci_type": "two-sided percentile interval",
+        "mean_difference": 0.07397123057976088,
+        "ci95": [
+          0.0610593955019246,
+          0.08723619216558384
+        ],
+        "paired_t_p": 2.0803604122303075e-25,
+        "wilcoxon_p": 2.0429645404186063e-29
+      },
+      "off_road_common_success": {
+        "n_images": 608,
+        "bootstrap_replicates": 10000,
+        "bootstrap_seed": 2025,
+        "ci_type": "two-sided percentile interval",
+        "mean_difference": -0.008318529275653219,
+        "ci95": [
+          -0.010278472275085796,
+          -0.006312449158539503
+        ],
+        "paired_t_p": 1.0809320584696895e-15,
+        "wilcoxon_p": 1.287961885744826e-33
+      }
+    },
+    "URA-style A*": {
+      "contrast": "Topology+Risk A* minus URA-style A*",
+      "success": {
+        "n_images": 624,
+        "bootstrap_replicates": 10000,
+        "bootstrap_seed": 2025,
+        "ci_type": "two-sided percentile interval",
+        "mean_difference": 0.030911344920074673,
+        "ci95": [
+          0.022615705081861462,
+          0.039559793291527215
+        ],
+        "paired_t_p": 4.026300195984688e-12,
+        "wilcoxon_p": 2.791719238535438e-15
+      },
+      "safe_success_0.05": {
+        "n_images": 624,
+        "bootstrap_replicates": 10000,
+        "bootstrap_seed": 2025,
+        "ci_type": "two-sided percentile interval",
+        "mean_difference": 0.011577882963369092,
+        "ci95": [
+          0.001435287042816366,
+          0.02147783177739157
+        ],
+        "paired_t_p": 0.02470661019424598,
+        "wilcoxon_p": 0.028095786209964592
+      },
+      "off_road_common_success": {
+        "n_images": 608,
+        "bootstrap_replicates": 10000,
+        "bootstrap_seed": 2025,
+        "ci_type": "two-sided percentile interval",
+        "mean_difference": 0.0013707001245747074,
+        "ci95": [
+          0.0001436128183771822,
+          0.0026533593956445368
+        ],
+        "paired_t_p": 0.02869794378972075,
+        "wilcoxon_p": 0.22382950244183164
+      }
+    }
+  }
+}

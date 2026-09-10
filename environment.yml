@@ -1,0 +1,28 @@
+# Recorded environment used for the reported experiments.
+# Create the base environment with:
+#   conda env create -f environment.yml
+#
+# Install the CUDA build of PyTorch afterwards:
+# Select the PyTorch build appropriate for the target CPU or GPU from
+# https://pytorch.org/get-started/locally/.
+
+name: road-risk-planning
+channels:
+  - defaults
+dependencies:
+  - python=3.9.25
+  - pip
+  - pip:
+      - matplotlib==3.9.4
+      - networkx==3.2.1
+      - numpy==2.0.2
+      - pandas==2.3.3
+      - pillow==11.3.0
+      - pytest==8.4.2
+      - PyYAML==6.0.3
+      - scikit-image==0.24.0
+      - scikit-learn==1.6.1
+      - scipy==1.13.1
+      - shapely==2.0.7
+      - tifffile==2024.8.30
+      - opencv-python==4.13.0.92

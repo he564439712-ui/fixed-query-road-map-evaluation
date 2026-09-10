@@ -1,0 +1,45 @@
+{
+  "audit_id": "APLS-IDENTITY-AUDIT-001",
+  "purpose": "Archived implementation sanity check; not a benchmark comparison or a new locked-test selection step.",
+  "implementation": {
+    "evaluator": "public SpaceNet APLS reference core on raster-derived graphs",
+    "identity_precondition": "Each source evaluator raises before result output if APLS(GT, GT) differs from 1 by more than 1e-9.",
+    "scope": "Definition-compatible raster-graph audit, not a native-georeferenced SpaceNet submission."
+  },
+  "runs": [
+    {
+      "label": "Massachusetts / U-Net ensemble",
+      "source_result": "artifacts/raw_metrics/massachusetts_apls_reference.json",
+      "images": 49,
+      "identity_checks_passed": 49,
+      "identity_definition": "APLS(GT, GT) within absolute tolerance 1e-9",
+      "coordinate_system": "image pixels for both GT and proposal graphs",
+      "control_node_sample_size": 500,
+      "max_snap_distance_pixels": 4,
+      "min_path_length_pixels": 10
+    },
+    {
+      "label": "DeepGlobe / U-Net ensemble",
+      "source_result": "artifacts/raw_metrics/deepglobe_unet_apls_reference.json",
+      "images": 624,
+      "identity_checks_passed": 624,
+      "identity_definition": "APLS(GT, GT) within absolute tolerance 1e-9",
+      "coordinate_system": "image pixels for both GT and proposal graphs",
+      "control_node_sample_size": 500,
+      "max_snap_distance_pixels": 4,
+      "min_path_length_pixels": 10
+    },
+    {
+      "label": "DeepGlobe / DeepLabV3-ResNet50",
+      "source_result": "artifacts/raw_metrics/deepglobe_deeplabv3_apls_reference.json",
+      "images": 624,
+      "identity_checks_passed": 624,
+      "identity_definition": "APLS(GT, GT) within absolute tolerance 1e-9",
+      "coordinate_system": "image pixels for both GT and proposal graphs",
+      "control_node_sample_size": 500,
+      "max_snap_distance_pixels": 4,
+      "min_path_length_pixels": 10
+    }
+  ],
+  "total_identity_checks_passed": 1297
+}

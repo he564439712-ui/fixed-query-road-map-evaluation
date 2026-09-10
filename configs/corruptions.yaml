@@ -1,0 +1,56 @@
+# Image degradation robustness evaluation
+# 1 clean + 4 types × 3 levels = 13 conditions
+
+corruptions:
+  gaussian_blur:
+    type: blur
+    levels:
+      - name: blur_light
+        sigma: 1.0
+      - name: blur_medium
+        sigma: 2.0
+      - name: blur_heavy
+        sigma: 3.5
+
+  gaussian_noise:
+    type: noise
+    levels:
+      - name: noise_light
+        std: 0.04
+      - name: noise_medium
+        std: 0.08
+      - name: noise_heavy
+        std: 0.15
+
+  brightness_contrast:
+    type: intensity
+    levels:
+      - name: bc_light
+        brightness: 0.15
+        contrast: 0.85
+      - name: bc_medium
+        brightness: 0.30
+        contrast: 0.70
+      - name: bc_heavy
+        brightness: 0.45
+        contrast: 0.55
+
+  shadow_occlusion:
+    type: occlusion
+    levels:
+      - name: shadow_light
+        num_regions: 2
+        max_area_ratio: 0.08
+        alpha: 0.4
+      - name: shadow_medium
+        num_regions: 4
+        max_area_ratio: 0.12
+        alpha: 0.6
+      - name: shadow_heavy
+        num_regions: 6
+        max_area_ratio: 0.18
+        alpha: 0.8
+
+seeds:
+  main: 42
+  confirm: [123, 456]  # confirmatory seeds for key conditions

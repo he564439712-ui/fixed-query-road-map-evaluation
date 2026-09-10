@@ -1,0 +1,25 @@
+# Conservative topology repair configuration
+
+skeleton:
+  method: zhangsuen  # or morph_thin
+
+endpoint_detection:
+  degree: 1  # skeleton nodes with degree == 1 are endpoints
+
+candidate_generation:
+  max_radius: 50             # pixels; max gap to consider bridging
+  min_radius: 2              # minimum gap (avoid self-connection)
+  exclude_same_component: true
+
+cost_weights:
+  w_p: 1.0       # weight for -log(q(x)) along candidate connection
+  w_l: 0.5       # weight for normalized gap length
+  w_theta: 1.0   # weight for direction inconsistency (1 - cos(theta))
+  w_w: 0.5       # weight for road width difference
+  w_g: 1.0       # reward weight for connectivity gain
+
+acceptance:
+  tau_gate: 2.0  # calibration-selected; accept only C(e) < tau_gate
+
+validation:
+  correct_bridge_overlap_threshold: 0.5  # fraction on dilated GT road mask

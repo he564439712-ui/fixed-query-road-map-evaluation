@@ -1,0 +1,13 @@
+cap,method,n,success_count,success_rate
+100k,Soft-probability A*,945,551,0.5830687830687831
+100k,Topology+Risk A*,945,538,0.5693121693121693
+100k,GT Oracle A*,945,866,0.9164021164021164
+200k,Soft-probability A*,945,613,0.6486772486772486
+200k,Topology+Risk A*,945,656,0.6941798941798942
+200k,GT Oracle A*,945,938,0.9925925925925926
+500k,Soft-probability A*,945,627,0.6634920634920635
+500k,Topology+Risk A*,945,686,0.725925925925926
+500k,GT Oracle A*,945,945,1.0
+unlimited,Soft-probability A*,945,627,0.6634920634920635
+unlimited,Topology+Risk A*,945,686,0.725925925925926
+unlimited,GT Oracle A*,945,945,1.0

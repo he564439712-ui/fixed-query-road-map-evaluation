@@ -1,0 +1,736 @@
+{
+  "protocol": {
+    "tau_gate": 2.0,
+    "n_conditions": 13,
+    "conditions": [
+      "clean",
+      "blur_light",
+      "blur_medium",
+      "blur_heavy",
+      "noise_light",
+      "noise_medium",
+      "noise_heavy",
+      "bc_light",
+      "bc_medium",
+      "bc_heavy",
+      "shadow_light",
+      "shadow_medium",
+      "shadow_heavy"
+    ],
+    "n_images": 49,
+    "queries_per_condition": 945,
+    "total_rows": 73710
+  },
+  "results": {
+    "clean": {
+      "Binary-mask A*": {
+        "n_queries": 945,
+        "success": 0.6571428571428571,
+        "safe_success_0.05": 0.008465608465608466,
+        "off_road_successes": 0.5047132982046687,
+        "detour_median_successes": -0.005621538245933187
+      },
+      "Clearance-aware A*": {
+        "n_queries": 945,
+        "success": 0.6423280423280423,
+        "safe_success_0.05": 0.5428571428571428,
+        "off_road_successes": 0.028257945042899493,
+        "detour_median_successes": 0.0026376328850360917
+      },
+      "GT Oracle A*": {
+        "n_queries": 945,
+        "success": 0.9925925925925926,
+        "safe_success_0.05": 0.9925925925925926,
+        "off_road_successes": 0.0,
+        "detour_median_successes": 0.0
+      },
+      "Soft-probability A*": {
+        "n_queries": 945,
+        "success": 0.6486772486772486,
+        "safe_success_0.05": 0.4984126984126984,
+        "off_road_successes": 0.041750263632136735,
+        "detour_median_successes": -0.0023027035654519397
+      },
+      "Topology+Risk A*": {
+        "n_queries": 945,
+        "success": 0.6941798941798942,
+        "safe_success_0.05": 0.5904761904761905,
+        "off_road_successes": 0.025597718196750493,
+        "detour_median_successes": 0.0042407079911232
+      },
+      "URA-style A*": {
+        "n_queries": 945,
+        "success": 0.6497354497354497,
+        "safe_success_0.05": 0.5587301587301587,
+        "off_road_successes": 0.0246836584650607,
+        "detour_median_successes": 0.003783217107837543
+      }
+    },
+    "blur_light": {
+      "Binary-mask A*": {
+        "n_queries": 945,
+        "success": 0.33650793650793653,
+        "safe_success_0.05": 0.01164021164021164,
+        "off_road_successes": 0.45515818618356013,
+        "detour_median_successes": -0.004834463085865428
+      },
+      "Clearance-aware A*": {
+        "n_queries": 945,
+        "success": 0.33121693121693124,
+        "safe_success_0.05": 0.29947089947089944,
+        "off_road_successes": 0.022783021597354576,
+        "detour_median_successes": 0.003013601433441918
+      },
+      "GT Oracle A*": {
+        "n_queries": 945,
+        "success": 0.9925925925925926,
+        "safe_success_0.05": 0.9925925925925926,
+        "off_road_successes": 0.0,
+        "detour_median_successes": 0.0
+      },
+      "Soft-probability A*": {
+        "n_queries": 945,
+        "success": 0.33121693121693124,
+        "safe_success_0.05": 0.2698412698412698,
+        "off_road_successes": 0.03656581791830289,
+        "detour_median_successes": -0.001506612597239148
+      },
+      "Topology+Risk A*": {
+        "n_queries": 945,
+        "success": 0.42433862433862435,
+        "safe_success_0.05": 0.36507936507936506,
+        "off_road_successes": 0.02580115292332412,
+        "detour_median_successes": 0.0049855665005673075
+      },
+      "URA-style A*": {
+        "n_queries": 945,
+        "success": 0.3322751322751323,
+        "safe_success_0.05": 0.28994708994708995,
+        "off_road_successes": 0.024280384363457308,
+        "detour_median_successes": 0.0051933407258830735
+      }
+    },
+    "blur_medium": {
+      "Binary-mask A*": {
+        "n_queries": 945,
+        "success": 0.06031746031746032,
+        "safe_success_0.05": 0.005291005291005291,
+        "off_road_successes": 0.37216460275601027,
+        "detour_median_successes": 0.0
+      },
+      "Clearance-aware A*": {
+        "n_queries": 945,
+        "success": 0.06031746031746032,
+        "safe_success_0.05": 0.05714285714285714,
+        "off_road_successes": 0.013866338524859073,
+        "detour_median_successes": 0.00998677076127409
+      },
+      "GT Oracle A*": {
+        "n_queries": 945,
+        "success": 0.9925925925925926,
+        "safe_success_0.05": 0.9925925925925926,
+        "off_road_successes": 0.0,
+        "detour_median_successes": 0.0
+      },
+      "Soft-probability A*": {
+        "n_queries": 945,
+        "success": 0.06031746031746032,
+        "safe_success_0.05": 0.056084656084656084,
+        "off_road_successes": 0.020970379683560823,
+        "detour_median_successes": 0.003082731816314279
+      },
+      "Topology+Risk A*": {
+        "n_queries": 945,
+        "success": 0.08783068783068783,
+        "safe_success_0.05": 0.08571428571428572,
+        "off_road_successes": 0.013099172245650464,
+        "detour_median_successes": 0.009144803688463156
+      },
+      "URA-style A*": {
+        "n_queries": 945,
+        "success": 0.06031746031746032,
+        "safe_success_0.05": 0.0582010582010582,
+        "off_road_successes": 0.01362898113054752,
+        "detour_median_successes": 0.00977685997665919
+      }
+    },
+    "blur_heavy": {
+      "Binary-mask A*": {
+        "n_queries": 945,
+        "success": 0.0,
+        "safe_success_0.05": 0.0,
+        "off_road_successes": NaN,
+        "detour_median_successes": NaN
+      },
+      "Clearance-aware A*": {
+        "n_queries": 945,
+        "success": 0.0,
+        "safe_success_0.05": 0.0,
+        "off_road_successes": NaN,
+        "detour_median_successes": NaN
+      },
+      "GT Oracle A*": {
+        "n_queries": 945,
+        "success": 0.9925925925925926,
+        "safe_success_0.05": 0.9925925925925926,
+        "off_road_successes": 0.0,
+        "detour_median_successes": 0.0
+      },
+      "Soft-probability A*": {
+        "n_queries": 945,
+        "success": 0.0,
+        "safe_success_0.05": 0.0,
+        "off_road_successes": NaN,
+        "detour_median_successes": NaN
+      },
+      "Topology+Risk A*": {
+        "n_queries": 945,
+        "success": 0.0,
+        "safe_success_0.05": 0.0,
+        "off_road_successes": NaN,
+        "detour_median_successes": NaN
+      },
+      "URA-style A*": {
+        "n_queries": 945,
+        "success": 0.0,
+        "safe_success_0.05": 0.0,
+        "off_road_successes": NaN,
+        "detour_median_successes": NaN
+      }
+    },
+    "noise_light": {
+      "Binary-mask A*": {
+        "n_queries": 945,
+        "success": 0.5005291005291005,
+        "safe_success_0.05": 0.009523809523809525,
+        "off_road_successes": 0.5007128654012895,
+        "detour_median_successes": -0.004750233535413823
+      },
+      "Clearance-aware A*": {
+        "n_queries": 945,
+        "success": 0.49206349206349204,
+        "safe_success_0.05": 0.43492063492063493,
+        "off_road_successes": 0.022993539589237326,
+        "detour_median_successes": 0.0026130161545735403
+      },
+      "GT Oracle A*": {
+        "n_queries": 945,
+        "success": 0.9925925925925926,
+        "safe_success_0.05": 0.9925925925925926,
+        "off_road_successes": 0.0,
+        "detour_median_successes": 0.0
+      },
+      "Soft-probability A*": {
+        "n_queries": 945,
+        "success": 0.4973544973544973,
+        "safe_success_0.05": 0.3925925925925926,
+        "off_road_successes": 0.036032816388495446,
+        "detour_median_successes": -0.0019129416955413173
+      },
+      "Topology+Risk A*": {
+        "n_queries": 945,
+        "success": 0.5862433862433862,
+        "safe_success_0.05": 0.508994708994709,
+        "off_road_successes": 0.02403213095758438,
+        "detour_median_successes": 0.004818226743116527
+      },
+      "URA-style A*": {
+        "n_queries": 945,
+        "success": 0.49523809523809526,
+        "safe_success_0.05": 0.44761904761904764,
+        "off_road_successes": 0.021104028056500874,
+        "detour_median_successes": 0.0040877280509149655
+      }
+    },
+    "noise_medium": {
+      "Binary-mask A*": {
+        "n_queries": 945,
+        "success": 0.014814814814814815,
+        "safe_success_0.05": 0.005291005291005291,
+        "off_road_successes": 0.22972939548469257,
+        "detour_median_successes": 0.0
+      },
+      "Clearance-aware A*": {
+        "n_queries": 945,
+        "success": 0.014814814814814815,
+        "safe_success_0.05": 0.014814814814814815,
+        "off_road_successes": 0.002267254586146144,
+        "detour_median_successes": 0.004871867730717136
+      },
+      "GT Oracle A*": {
+        "n_queries": 945,
+        "success": 0.9925925925925926,
+        "safe_success_0.05": 0.9925925925925926,
+        "off_road_successes": 0.0,
+        "detour_median_successes": 0.0
+      },
+      "Soft-probability A*": {
+        "n_queries": 945,
+        "success": 0.014814814814814815,
+        "safe_success_0.05": 0.014814814814814815,
+        "off_road_successes": 0.0035992680925876325,
+        "detour_median_successes": 0.000653242469282895
+      },
+      "Topology+Risk A*": {
+        "n_queries": 945,
+        "success": 0.020105820105820106,
+        "safe_success_0.05": 0.01904761904761905,
+        "off_road_successes": 0.007304397738527219,
+        "detour_median_successes": 0.005119637736962929
+      },
+      "URA-style A*": {
+        "n_queries": 945,
+        "success": 0.014814814814814815,
+        "safe_success_0.05": 0.014814814814814815,
+        "off_road_successes": 0.004449455568795184,
+        "detour_median_successes": 0.004107534928660666
+      }
+    },
+    "noise_heavy": {
+      "Binary-mask A*": {
+        "n_queries": 945,
+        "success": 0.0,
+        "safe_success_0.05": 0.0,
+        "off_road_successes": NaN,
+        "detour_median_successes": NaN
+      },
+      "Clearance-aware A*": {
+        "n_queries": 945,
+        "success": 0.0,
+        "safe_success_0.05": 0.0,
+        "off_road_successes": NaN,
+        "detour_median_successes": NaN
+      },
+      "GT Oracle A*": {
+        "n_queries": 945,
+        "success": 0.9925925925925926,
+        "safe_success_0.05": 0.9925925925925926,
+        "off_road_successes": 0.0,
+        "detour_median_successes": 0.0
+      },
+      "Soft-probability A*": {
+        "n_queries": 945,
+        "success": 0.0,
+        "safe_success_0.05": 0.0,
+        "off_road_successes": NaN,
+        "detour_median_successes": NaN
+      },
+      "Topology+Risk A*": {
+        "n_queries": 945,
+        "success": 0.0,
+        "safe_success_0.05": 0.0,
+        "off_road_successes": NaN,
+        "detour_median_successes": NaN
+      },
+      "URA-style A*": {
+        "n_queries": 945,
+        "success": 0.0,
+        "safe_success_0.05": 0.0,
+        "off_road_successes": NaN,
+        "detour_median_successes": NaN
+      }
+    },
+    "bc_light": {
+      "Binary-mask A*": {
+        "n_queries": 945,
+        "success": 0.4687830687830688,
+        "safe_success_0.05": 0.012698412698412698,
+        "off_road_successes": 0.4780422044744926,
+        "detour_median_successes": -0.005172911529018855
+      },
+      "Clearance-aware A*": {
+        "n_queries": 945,
+        "success": 0.45925925925925926,
+        "safe_success_0.05": 0.3978835978835979,
+        "off_road_successes": 0.026338639497186147,
+        "detour_median_successes": 0.0025910007579946596
+      },
+      "GT Oracle A*": {
+        "n_queries": 945,
+        "success": 0.9925925925925926,
+        "safe_success_0.05": 0.9925925925925926,
+        "off_road_successes": 0.0,
+        "detour_median_successes": 0.0
+      },
+      "Soft-probability A*": {
+        "n_queries": 945,
+        "success": 0.4624338624338624,
+        "safe_success_0.05": 0.3682539682539683,
+        "off_road_successes": 0.037337706833291205,
+        "detour_median_successes": -0.0018134883511431534
+      },
+      "Topology+Risk A*": {
+        "n_queries": 945,
+        "success": 0.5576719576719577,
+        "safe_success_0.05": 0.491005291005291,
+        "off_road_successes": 0.024419704017972773,
+        "detour_median_successes": 0.004479188296866524
+      },
+      "URA-style A*": {
+        "n_queries": 945,
+        "success": 0.46455026455026455,
+        "safe_success_0.05": 0.4095238095238095,
+        "off_road_successes": 0.02258896198745105,
+        "detour_median_successes": 0.004125548756639556
+      }
+    },
+    "bc_medium": {
+      "Binary-mask A*": {
+        "n_queries": 945,
+        "success": 0.18941798941798943,
+        "safe_success_0.05": 0.009523809523809525,
+        "off_road_successes": 0.42521922149963776,
+        "detour_median_successes": -0.003687246719715056
+      },
+      "Clearance-aware A*": {
+        "n_queries": 945,
+        "success": 0.18624338624338624,
+        "safe_success_0.05": 0.16296296296296298,
+        "off_road_successes": 0.02513391949432295,
+        "detour_median_successes": 0.0030026897704151225
+      },
+      "GT Oracle A*": {
+        "n_queries": 945,
+        "success": 0.9925925925925926,
+        "safe_success_0.05": 0.9925925925925926,
+        "off_road_successes": 0.0,
+        "detour_median_successes": 0.0
+      },
+      "Soft-probability A*": {
+        "n_queries": 945,
+        "success": 0.1873015873015873,
+        "safe_success_0.05": 0.1439153439153439,
+        "off_road_successes": 0.0359653412941239,
+        "detour_median_successes": -0.00037426602467164087
+      },
+      "Topology+Risk A*": {
+        "n_queries": 945,
+        "success": 0.291005291005291,
+        "safe_success_0.05": 0.2571428571428571,
+        "off_road_successes": 0.02369167460602996,
+        "detour_median_successes": 0.005939602027937491
+      },
+      "URA-style A*": {
+        "n_queries": 945,
+        "success": 0.1873015873015873,
+        "safe_success_0.05": 0.16296296296296298,
+        "off_road_successes": 0.025096562318114808,
+        "detour_median_successes": 0.00651993725171472
+      }
+    },
+    "bc_heavy": {
+      "Binary-mask A*": {
+        "n_queries": 945,
+        "success": 0.0010582010582010583,
+        "safe_success_0.05": 0.0010582010582010583,
+        "off_road_successes": 0.0,
+        "detour_median_successes": 0.0
+      },
+      "Clearance-aware A*": {
+        "n_queries": 945,
+        "success": 0.0010582010582010583,
+        "safe_success_0.05": 0.0010582010582010583,
+        "off_road_successes": 0.0,
+        "detour_median_successes": 1.4759269121618457e-16
+      },
+      "GT Oracle A*": {
+        "n_queries": 945,
+        "success": 0.9925925925925926,
+        "safe_success_0.05": 0.9925925925925926,
+        "off_road_successes": 0.0,
+        "detour_median_successes": 0.0
+      },
+      "Soft-probability A*": {
+        "n_queries": 945,
+        "success": 0.0010582010582010583,
+        "safe_success_0.05": 0.0010582010582010583,
+        "off_road_successes": 0.0,
+        "detour_median_successes": 1.4759269121618457e-16
+      },
+      "Topology+Risk A*": {
+        "n_queries": 945,
+        "success": 0.0021164021164021165,
+        "safe_success_0.05": 0.0021164021164021165,
+        "off_road_successes": 0.006916996047430846,
+        "detour_median_successes": 0.00047432521452668347
+      },
+      "URA-style A*": {
+        "n_queries": 945,
+        "success": 0.0010582010582010583,
+        "safe_success_0.05": 0.0010582010582010583,
+        "off_road_successes": 0.0,
+        "detour_median_successes": 1.4759269121618457e-16
+      }
+    },
+    "shadow_light": {
+      "Binary-mask A*": {
+        "n_queries": 945,
+        "success": 0.6190476190476191,
+        "safe_success_0.05": 0.008465608465608466,
+        "off_road_successes": 0.5040599818413243,
+        "detour_median_successes": -0.005664320653303447
+      },
+      "Clearance-aware A*": {
+        "n_queries": 945,
+        "success": 0.6052910052910053,
+        "safe_success_0.05": 0.5195767195767196,
+        "off_road_successes": 0.027489292430096415,
+        "detour_median_successes": 0.0024458338061538487
+      },
+      "GT Oracle A*": {
+        "n_queries": 945,
+        "success": 0.9925925925925926,
+        "safe_success_0.05": 0.9925925925925926,
+        "off_road_successes": 0.0,
+        "detour_median_successes": 0.0
+      },
+      "Soft-probability A*": {
+        "n_queries": 945,
+        "success": 0.6116402116402117,
+        "safe_success_0.05": 0.47619047619047616,
+        "off_road_successes": 0.04140361431659659,
+        "detour_median_successes": -0.0023423288486138314
+      },
+      "Topology+Risk A*": {
+        "n_queries": 945,
+        "success": 0.6677248677248677,
+        "safe_success_0.05": 0.5767195767195767,
+        "off_road_successes": 0.024636751128325803,
+        "detour_median_successes": 0.00407567942662905
+      },
+      "URA-style A*": {
+        "n_queries": 945,
+        "success": 0.6126984126984127,
+        "safe_success_0.05": 0.5333333333333333,
+        "off_road_successes": 0.023846616002092157,
+        "detour_median_successes": 0.0037076439816057355
+      }
+    },
+    "shadow_medium": {
+      "Binary-mask A*": {
+        "n_queries": 945,
+        "success": 0.3978835978835979,
+        "safe_success_0.05": 0.008465608465608466,
+        "off_road_successes": 0.4900262686349845,
+        "detour_median_successes": -0.004851693689086712
+      },
+      "Clearance-aware A*": {
+        "n_queries": 945,
+        "success": 0.3915343915343915,
+        "safe_success_0.05": 0.3439153439153439,
+        "off_road_successes": 0.0244943024865401,
+        "detour_median_successes": 0.0028020628885737945
+      },
+      "GT Oracle A*": {
+        "n_queries": 945,
+        "success": 0.9925925925925926,
+        "safe_success_0.05": 0.9925925925925926,
+        "off_road_successes": 0.0,
+        "detour_median_successes": 0.0
+      },
+      "Soft-probability A*": {
+        "n_queries": 945,
+        "success": 0.39470899470899473,
+        "safe_success_0.05": 0.3142857142857143,
+        "off_road_successes": 0.03863355688109833,
+        "detour_median_successes": -0.001596539918594874
+      },
+      "Topology+Risk A*": {
+        "n_queries": 945,
+        "success": 0.43915343915343913,
+        "safe_success_0.05": 0.38835978835978835,
+        "off_road_successes": 0.022410657573994054,
+        "detour_median_successes": 0.004252708334707344
+      },
+      "URA-style A*": {
+        "n_queries": 945,
+        "success": 0.39470899470899473,
+        "safe_success_0.05": 0.35343915343915344,
+        "off_road_successes": 0.021816749044543154,
+        "detour_median_successes": 0.0038026315814199164
+      }
+    },
+    "shadow_heavy": {
+      "Binary-mask A*": {
+        "n_queries": 945,
+        "success": 0.14497354497354498,
+        "safe_success_0.05": 0.0031746031746031746,
+        "off_road_successes": 0.4914684493750059,
+        "detour_median_successes": -0.004273471837382233
+      },
+      "Clearance-aware A*": {
+        "n_queries": 945,
+        "success": 0.1439153439153439,
+        "safe_success_0.05": 0.1291005291005291,
+        "off_road_successes": 0.019787741721566658,
+        "detour_median_successes": 0.002668134936232788
+      },
+      "GT Oracle A*": {
+        "n_queries": 945,
+        "success": 0.9925925925925926,
+        "safe_success_0.05": 0.9925925925925926,
+        "off_road_successes": 0.0,
+        "detour_median_successes": 0.0
+      },
+      "Soft-probability A*": {
+        "n_queries": 945,
+        "success": 0.14497354497354498,
+        "safe_success_0.05": 0.11851851851851852,
+        "off_road_successes": 0.03414771393951117,
+        "detour_median_successes": -0.001560871892911451
+      },
+      "Topology+Risk A*": {
+        "n_queries": 945,
+        "success": 0.164021164021164,
+        "safe_success_0.05": 0.14708994708994708,
+        "off_road_successes": 0.02205413526499737,
+        "detour_median_successes": 0.004219933571820992
+      },
+      "URA-style A*": {
+        "n_queries": 945,
+        "success": 0.14497354497354498,
+        "safe_success_0.05": 0.13227513227513227,
+        "off_road_successes": 0.016934920156343434,
+        "detour_median_successes": 0.0040606854436911624
+      }
+    }
+  },
+  "degraded_image_clustered_contrasts": {
+    "Binary-mask A*": {
+      "contrast": "Topology+Risk A* minus Binary-mask A*",
+      "unit": "image; each image averaged over the 12 degraded conditions",
+      "success": {
+        "n_images": 49,
+        "mean_difference": 0.041921768707482994,
+        "ci95": [
+          0.03134468210361067,
+          0.052773907639979065
+        ],
+        "paired_t_p": 1.1729938672180925e-09,
+        "wilcoxon_p": 2.227973538437093e-08
+      },
+      "safe_success_0.05": {
+        "n_images": 49,
+        "mean_difference": 0.22859759288330714,
+        "ci95": [
+          0.19148989403453692,
+          0.26526769361590785
+        ],
+        "paired_t_p": 4.674360230584008e-16,
+        "wilcoxon_p": 1.6290099920378263e-09
+      },
+      "off_road_common_success": {
+        "n_images": 48,
+        "mean_difference": -0.4468297820142431,
+        "ci95": [
+          -0.4676404267662666,
+          -0.42314187732593816
+        ],
+        "paired_t_p": 1.5981325433010323e-37,
+        "wilcoxon_p": 7.105427357601002e-15
+      }
+    },
+    "Clearance-aware A*": {
+      "contrast": "Topology+Risk A* minus Clearance-aware A*",
+      "unit": "image; each image averaged over the 12 degraded conditions",
+      "success": {
+        "n_images": 49,
+        "mean_difference": 0.04574829931972789,
+        "ci95": [
+          0.03605442176870749,
+          0.05577593537414966
+        ],
+        "paired_t_p": 8.08838973114759e-12,
+        "wilcoxon_p": 2.3888681962910136e-09
+      },
+      "safe_success_0.05": {
+        "n_images": 49,
+        "mean_difference": 0.03965855572998429,
+        "ci95": [
+          0.029853479853479862,
+          0.05015077184720042
+        ],
+        "paired_t_p": 1.2552775328443724e-09,
+        "wilcoxon_p": 9.81042335060388e-09
+      },
+      "off_road_common_success": {
+        "n_images": 48,
+        "mean_difference": -0.002759320023523384,
+        "ci95": [
+          -0.004883099164145583,
+          -0.0009356184049179468
+        ],
+        "paired_t_p": 0.010501400631994149,
+        "wilcoxon_p": 0.00024065113857035106
+      }
+    },
+    "Soft-probability A*": {
+      "contrast": "Topology+Risk A* minus Soft-probability A*",
+      "unit": "image; each image averaged over the 12 degraded conditions",
+      "success": {
+        "n_images": 49,
+        "mean_difference": 0.04413265306122449,
+        "ci95": [
+          0.034098639455782315,
+          0.05455275379382522
+        ],
+        "paired_t_p": 6.833749767321048e-11,
+        "wilcoxon_p": 4.99478680692078e-09
+      },
+      "safe_success_0.05": {
+        "n_images": 49,
+        "mean_difference": 0.05615515436944008,
+        "ci95": [
+          0.043438971742543166,
+          0.069440083725798
+        ],
+        "paired_t_p": 5.411451758396152e-11,
+        "wilcoxon_p": 7.538507508234465e-09
+      },
+      "off_road_common_success": {
+        "n_images": 48,
+        "mean_difference": -0.015385356331212232,
+        "ci95": [
+          -0.018857850444597535,
+          -0.012084617834672629
+        ],
+        "paired_t_p": 2.391748008488567e-11,
+        "wilcoxon_p": 6.423306331271306e-12
+      }
+    },
+    "URA-style A*": {
+      "contrast": "Topology+Risk A* minus URA-style A*",
+      "unit": "image; each image averaged over the 12 degraded conditions",
+      "success": {
+        "n_images": 49,
+        "mean_difference": 0.04396258503401361,
+        "ci95": [
+          0.03403976975405547,
+          0.05429127420198848
+        ],
+        "paired_t_p": 7.304172008122456e-11,
+        "wilcoxon_p": 4.857707298098309e-09
+      },
+      "safe_success_0.05": {
+        "n_images": 49,
+        "mean_difference": 0.036211407639979064,
+        "ci95": [
+          0.02596137493458922,
+          0.04693239795918367
+        ],
+        "paired_t_p": 2.9662455440292365e-08,
+        "wilcoxon_p": 1.0889615705602653e-07
+      },
+      "off_road_common_success": {
+        "n_images": 48,
+        "mean_difference": -0.00028865980992309384,
+        "ci95": [
+          -0.0019088840897087571,
+          0.0012579237516149066
+        ],
+        "paired_t_p": 0.7241055919530256,
+        "wilcoxon_p": 0.656716789602209
+      }
+    }
+  }
+}

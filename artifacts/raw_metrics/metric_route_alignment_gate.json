@@ -1,0 +1,169 @@
+{
+  "experiment_id": "MRA-GATE-016",
+  "split": "calibration",
+  "locked_test_split_used": false,
+  "protocol": {
+    "image_ids": [
+      "10078750_15",
+      "10528705_15",
+      "10828645_15",
+      "10978705_15",
+      "10978945_15",
+      "11278750_15",
+      "11428690_15",
+      "11428735_15",
+      "12028705_15",
+      "12628735_15",
+      "15628885_15",
+      "15628945_15",
+      "15778945_15",
+      "15928900_15",
+      "15928915_15",
+      "15928945_15",
+      "16228855_15",
+      "16378825_15",
+      "16828900_15",
+      "17128885_15"
+    ],
+    "conditions": [
+      "clean",
+      "blur_medium",
+      "shadow_medium",
+      "noise_medium",
+      "bc_medium"
+    ],
+    "requested_queries_per_image": 12,
+    "query_seed": 2025,
+    "threshold": 0.5,
+    "planner": "fixed probability-cost A* on original thresholded map; no repair or learned selector",
+    "safe_route_success": "A* success with exact-GT centerline off-road ratio <=0.05",
+    "rank_reversal": "metric-preferred condition has safe-route success lower by at least two image queries"
+  },
+  "wall_seconds": 64.5524903,
+  "per_image_alignment": {
+    "images": 20,
+    "route_informative_images": 15,
+    "conditions": [
+      "clean",
+      "blur_medium",
+      "shadow_medium",
+      "noise_medium",
+      "bc_medium"
+    ],
+    "metrics": {
+      "dice": {
+        "informative_images": 15,
+        "tau_images_with_finite_metric_ranking": 15,
+        "median_tau_b": 0.8366600265340756,
+        "image_bootstrap_95_ci": [
+          0.7378647873726218,
+          0.9486832980505137
+        ],
+        "images_with_any_rank_reversal": 1,
+        "reversal_image_fraction": 0.05,
+        "pairwise_reversals": 1,
+        "pairwise_comparisons": 200,
+        "per_image_reversals": {
+          "10078750_15": 0,
+          "10528705_15": 1,
+          "10828645_15": 0,
+          "10978705_15": 0,
+          "10978945_15": 0,
+          "11278750_15": 0,
+          "11428690_15": 0,
+          "11428735_15": 0,
+          "12028705_15": 0,
+          "12628735_15": 0,
+          "15628885_15": 0,
+          "15628945_15": 0,
+          "15778945_15": 0,
+          "15928900_15": 0,
+          "15928915_15": 0,
+          "15928945_15": 0,
+          "16228855_15": 0,
+          "16378825_15": 0,
+          "16828900_15": 0,
+          "17128885_15": 0
+        }
+      },
+      "cldice": {
+        "informative_images": 15,
+        "tau_images_with_finite_metric_ranking": 15,
+        "median_tau_b": 0.8366600265340756,
+        "image_bootstrap_95_ci": [
+          0.8164965809277261,
+          0.9428090415820632
+        ],
+        "images_with_any_rank_reversal": 0,
+        "reversal_image_fraction": 0.0,
+        "pairwise_reversals": 0,
+        "pairwise_comparisons": 200,
+        "per_image_reversals": {
+          "10078750_15": 0,
+          "10528705_15": 0,
+          "10828645_15": 0,
+          "10978705_15": 0,
+          "10978945_15": 0,
+          "11278750_15": 0,
+          "11428690_15": 0,
+          "11428735_15": 0,
+          "12028705_15": 0,
+          "12628735_15": 0,
+          "15628885_15": 0,
+          "15628945_15": 0,
+          "15778945_15": 0,
+          "15928900_15": 0,
+          "15928915_15": 0,
+          "15928945_15": 0,
+          "16228855_15": 0,
+          "16378825_15": 0,
+          "16828900_15": 0,
+          "17128885_15": 0
+        }
+      },
+      "apls": {
+        "informative_images": 15,
+        "tau_images_with_finite_metric_ranking": 15,
+        "median_tau_b": 0.8366600265340756,
+        "image_bootstrap_95_ci": [
+          0.7378647873726218,
+          0.8944271909999159
+        ],
+        "images_with_any_rank_reversal": 1,
+        "reversal_image_fraction": 0.05,
+        "pairwise_reversals": 2,
+        "pairwise_comparisons": 200,
+        "per_image_reversals": {
+          "10078750_15": 0,
+          "10528705_15": 0,
+          "10828645_15": 2,
+          "10978705_15": 0,
+          "10978945_15": 0,
+          "11278750_15": 0,
+          "11428690_15": 0,
+          "11428735_15": 0,
+          "12028705_15": 0,
+          "12628735_15": 0,
+          "15628885_15": 0,
+          "15628945_15": 0,
+          "15778945_15": 0,
+          "15928900_15": 0,
+          "15928915_15": 0,
+          "15928945_15": 0,
+          "16228855_15": 0,
+          "16378825_15": 0,
+          "16828900_15": 0,
+          "17128885_15": 0
+        }
+      }
+    }
+  },
+  "status": "no-go",
+  "decision": "NO-GO",
+  "go_criteria": {
+    "route_informative_images_at_least": 15,
+    "dice_and_cldice_median_tau_b_below": 0.7,
+    "dice_and_cldice_bootstrap_upper_below": 0.8,
+    "cldice_reversal_image_fraction_at_least": 0.25
+  }
+}

@@ -1,0 +1,262 @@
+{
+  "status": "post_hoc_descriptive",
+  "inputs": {
+    "apls": "artifacts\\raw_metrics\\massachusetts_apls_reference.json",
+    "query_outcomes": "artifacts\\raw_metrics\\factorial_ablation.csv",
+    "matched_query_condition": "Original vs Repaired with score=q and boundary=on"
+  },
+  "counts": {
+    "images": 49,
+    "apls_increased_images": 45,
+    "positive_net_success_change_images": 18,
+    "apls_increased_without_positive_net_success_change": 27
+  },
+  "interpretation": "APLS and fixed-query completion summarize different units. This saved-output diagnostic motivates joint reporting; it is not evidence that APLS fails and is not a general metric-ranking test.",
+  "per_image": [
+    {
+      "image_id": "10378780_15",
+      "apls_delta": 0.08662391851524495,
+      "success_rate_delta": 0.25
+    },
+    {
+      "image_id": "10828720_15",
+      "apls_delta": 0.05568343332416925,
+      "success_rate_delta": 0.05
+    },
+    {
+      "image_id": "11128870_15",
+      "apls_delta": 0.042340624098338664,
+      "success_rate_delta": 0.05
+    },
+    {
+      "image_id": "11278840_15",
+      "apls_delta": 0.20227399998750048,
+      "success_rate_delta": 0.0
+    },
+    {
+      "image_id": "11728825_15",
+      "apls_delta": 0.09067316318840213,
+      "success_rate_delta": 0.05
+    },
+    {
+      "image_id": "12328750_15",
+      "apls_delta": 0.07767751962801356,
+      "success_rate_delta": 0.05
+    },
+    {
+      "image_id": "15928855_15",
+      "apls_delta": 0.03269161115231406,
+      "success_rate_delta": 0.05
+    },
+    {
+      "image_id": "16078870_15",
+      "apls_delta": 0.3155234580317063,
+      "success_rate_delta": 0.0
+    },
+    {
+      "image_id": "17878735_15",
+      "apls_delta": -0.006381227437779441,
+      "success_rate_delta": 0.0
+    },
+    {
+      "image_id": "17878780_15",
+      "apls_delta": -0.019259476248294993,
+      "success_rate_delta": 0.0
+    },
+    {
+      "image_id": "17878885_15",
+      "apls_delta": 0.06876893907473913,
+      "success_rate_delta": 0.1
+    },
+    {
+      "image_id": "18028750_15",
+      "apls_delta": 0.0007585859353220203,
+      "success_rate_delta": 0.0
+    },
+    {
+      "image_id": "18178780_15",
+      "apls_delta": 0.014748036625749639,
+      "success_rate_delta": 0.0
+    },
+    {
+      "image_id": "18328735_15",
+      "apls_delta": 0.03135646779007337,
+      "success_rate_delta": 0.0
+    },
+    {
+      "image_id": "18328780_15",
+      "apls_delta": -0.028569755738165337,
+      "success_rate_delta": 0.0
+    },
+    {
+      "image_id": "18328960_15",
+      "apls_delta": 0.0036481822381247975,
+      "success_rate_delta": 0.0
+    },
+    {
+      "image_id": "18478735_15",
+      "apls_delta": 0.03619587712924338,
+      "success_rate_delta": 0.0
+    },
+    {
+      "image_id": "18478900_15",
+      "apls_delta": 0.05185728944137001,
+      "success_rate_delta": 0.0
+    },
+    {
+      "image_id": "18478930_15",
+      "apls_delta": 0.006508747044236096,
+      "success_rate_delta": 0.0
+    },
+    {
+      "image_id": "20278885_15",
+      "apls_delta": 0.02456841552660749,
+      "success_rate_delta": 0.07692307692307693
+    },
+    {
+      "image_id": "20728960_15",
+      "apls_delta": 0.15947862600256418,
+      "success_rate_delta": 0.35
+    },
+    {
+      "image_id": "20878930_15",
+      "apls_delta": 0.0960747521521223,
+      "success_rate_delta": 0.15
+    },
+    {
+      "image_id": "21479035_15",
+      "apls_delta": 0.16962408740848553,
+      "success_rate_delta": 0.55
+    },
+    {
+      "image_id": "21779005_15",
+      "apls_delta": 0.04886047014324544,
+      "success_rate_delta": 0.0
+    },
+    {
+      "image_id": "22078975_15",
+      "apls_delta": -0.004747161314767545,
+      "success_rate_delta": 0.0
+    },
+    {
+      "image_id": "22228900_15",
+      "apls_delta": 0.11851173302899043,
+      "success_rate_delta": 0.0
+    },
+    {
+      "image_id": "22229050_15",
+      "apls_delta": 0.020887027266841607,
+      "success_rate_delta": -0.1
+    },
+    {
+      "image_id": "22528885_15",
+      "apls_delta": 0.014607355932043875,
+      "success_rate_delta": 0.0
+    },
+    {
+      "image_id": "22529065_15",
+      "apls_delta": 0.02907069663236428,
+      "success_rate_delta": 0.1
+    },
+    {
+      "image_id": "23278915_15",
+      "apls_delta": 0.010089596212061291,
+      "success_rate_delta": 0.0
+    },
+    {
+      "image_id": "23278930_15",
+      "apls_delta": 0.21869847972491807,
+      "success_rate_delta": 0.2
+    },
+    {
+      "image_id": "23428540_15",
+      "apls_delta": 0.001857768338353466,
+      "success_rate_delta": 0.0
+    },
+    {
+      "image_id": "23428810_15",
+      "apls_delta": 0.06425296998680019,
+      "success_rate_delta": 0.0
+    },
+    {
+      "image_id": "23429080_15",
+      "apls_delta": 0.031115924913038273,
+      "success_rate_delta": 0.0
+    },
+    {
+      "image_id": "23729020_15",
+      "apls_delta": 0.011263807139235006,
+      "success_rate_delta": 0.0
+    },
+    {
+      "image_id": "23878540_15",
+      "apls_delta": 0.0469791200019431,
+      "success_rate_delta": 0.0
+    },
+    {
+      "image_id": "24029035_15",
+      "apls_delta": 0.05257474499640813,
+      "success_rate_delta": 0.05
+    },
+    {
+      "image_id": "24478825_15",
+      "apls_delta": 0.02750854521766921,
+      "success_rate_delta": 0.0
+    },
+    {
+      "image_id": "24478855_15",
+      "apls_delta": 0.014255293639428512,
+      "success_rate_delta": 0.0
+    },
+    {
+      "image_id": "24479170_15",
+      "apls_delta": 0.009563145513763582,
+      "success_rate_delta": 0.05
+    },
+    {
+      "image_id": "24479215_15",
+      "apls_delta": 0.07502884059668463,
+      "success_rate_delta": 0.0
+    },
+    {
+      "image_id": "24628885_15",
+      "apls_delta": 0.01658030503999741,
+      "success_rate_delta": 0.1
+    },
+    {
+      "image_id": "24629200_15",
+      "apls_delta": 0.05088911549062464,
+      "success_rate_delta": 0.0
+    },
+    {
+      "image_id": "24779275_15",
+      "apls_delta": 0.012901682155500832,
+      "success_rate_delta": 0.0
+    },
+    {
+      "image_id": "25079170_15",
+      "apls_delta": 0.04249055447198399,
+      "success_rate_delta": 0.0
+    },
+    {
+      "image_id": "26278720_15",
+      "apls_delta": 0.009736705513012686,
+      "success_rate_delta": 0.0
+    },
+    {
+      "image_id": "26428735_15",
+      "apls_delta": 0.1070457835087765,
+      "success_rate_delta": 0.0
+    },
+    {
+      "image_id": "26578720_15",
+      "apls_delta": 0.11882355716648746,
+      "success_rate_delta": 0.15
+    },
+    {
+      "image_id": "26878690_15",
+      "apls_delta": 0.02927232881691405,
+      "success_rate_delta": 0.05
+    }
+  ]
+}

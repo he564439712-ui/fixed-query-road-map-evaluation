@@ -1,0 +1,23 @@
+{
+  "unit": "image",
+  "n_images": 49,
+  "definition": "success and reference-road off-road ratio <= 0.05",
+  "soft_mean": 0.49654631083202505,
+  "proposed_mean": 0.5853218210361067,
+  "paired_difference": 0.08877551020408164,
+  "bootstrap_seed": 2025,
+  "bootstrap_replicates": 20000,
+  "bootstrap_95_ci": [
+    0.052040816326530626,
+    0.1275510204081633
+  ],
+  "paired_t": {
+    "statistic": 4.522405379504678,
+    "p_value": 4.0123521696523284e-05
+  },
+  "wilcoxon": {
+    "statistic": 61.0,
+    "p_value": 1.1380685721070515e-05
+  },
+  "cohen_dz": 0.6460579113578111
+}

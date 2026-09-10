@@ -1,0 +1,103 @@
+{
+  "validation": {
+    "n_images": 49,
+    "n_queries": 945,
+    "n_rows": 1890,
+    "success": {
+      "Soft-probability A*": 0.6486772486772486,
+      "Topology+Risk A*": 0.6941798941798942
+    }
+  },
+  "metric": "RouteConform@5% = success and no more than 5% of raster path nodes outside the tolerance-dilated reference road mask",
+  "evaluation_only": true,
+  "tolerances": {
+    "0": {
+      "dilation": "square Chebyshev radius 0 pixel(s)",
+      "query_pooled": {
+        "full": 0.5904761904761905,
+        "soft": 0.4984126984126984,
+        "difference": 0.09206349206349207
+      },
+      "image_clustered": {
+        "unit": "image",
+        "n_images": 49,
+        "full_mean": 0.5853218210361067,
+        "soft_mean": 0.49654631083202505,
+        "paired_difference": 0.08877551020408164,
+        "bootstrap_replicates": 20000,
+        "bootstrap_seed": 2025,
+        "ci_type": "two-sided percentile interval",
+        "bootstrap_95_ci": [
+          0.052040816326530626,
+          0.1275510204081633
+        ]
+      }
+    },
+    "1": {
+      "dilation": "square Chebyshev radius 1 pixel(s)",
+      "query_pooled": {
+        "full": 0.6592592592592592,
+        "soft": 0.6084656084656085,
+        "difference": 0.050793650793650724
+      },
+      "image_clustered": {
+        "unit": "image",
+        "n_images": 49,
+        "full_mean": 0.6521978021978021,
+        "soft_mean": 0.6032182103610675,
+        "paired_difference": 0.0489795918367347,
+        "bootstrap_replicates": 20000,
+        "bootstrap_seed": 2025,
+        "ci_type": "two-sided percentile interval",
+        "bootstrap_95_ci": [
+          0.01734693877551021,
+          0.08265306122448982
+        ]
+      }
+    },
+    "2": {
+      "dilation": "square Chebyshev radius 2 pixel(s)",
+      "query_pooled": {
+        "full": 0.6804232804232804,
+        "soft": 0.6296296296296297,
+        "difference": 0.050793650793650724
+      },
+      "image_clustered": {
+        "unit": "image",
+        "n_images": 49,
+        "full_mean": 0.6726059654631085,
+        "soft_mean": 0.6236263736263736,
+        "paired_difference": 0.0489795918367347,
+        "bootstrap_replicates": 20000,
+        "bootstrap_seed": 2025,
+        "ci_type": "two-sided percentile interval",
+        "bootstrap_95_ci": [
+          0.022448979591836737,
+          0.0806122448979592
+        ]
+      }
+    },
+    "3": {
+      "dilation": "square Chebyshev radius 3 pixel(s)",
+      "query_pooled": {
+        "full": 0.6814814814814815,
+        "soft": 0.635978835978836,
+        "difference": 0.04550264550264549
+      },
+      "image_clustered": {
+        "unit": "image",
+        "n_images": 49,
+        "full_mean": 0.6741758241758242,
+        "soft_mean": 0.630298273155416,
+        "paired_difference": 0.04387755102040816,
+        "bootstrap_replicates": 20000,
+        "bootstrap_seed": 2025,
+        "ci_type": "two-sided percentile interval",
+        "bootstrap_95_ci": [
+          0.017346938775510214,
+          0.07551020408163267
+        ]
+      }
+    }
+  }
+}

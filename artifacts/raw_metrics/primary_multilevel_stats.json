@@ -1,0 +1,52 @@
+{
+  "analysis": "Paired Original-to-Repaired Massachusetts image contrasts",
+  "statistical_unit": "image cluster retaining all fixed queries",
+  "bootstrap_replicates": 20000,
+  "bootstrap_seed": 2025,
+  "sources": [
+    "artifacts\\raw_metrics\\massachusetts_test_seg.csv",
+    "artifacts\\raw_metrics\\massachusetts_apls_reference.json"
+  ],
+  "metrics": {
+    "components_per_image": {
+      "n_images": 49,
+      "mean_delta": -18.122448979591837,
+      "delta_bootstrap_95_ci": [
+        -22.918367346938776,
+        -14.060714285714331
+      ]
+    },
+    "structural_connectivity": {
+      "n_images": 49,
+      "mean_delta": 0.06075353218210361,
+      "delta_bootstrap_95_ci": [
+        0.028726452119309263,
+        0.09952904238618525
+      ]
+    },
+    "dice": {
+      "n_images": 49,
+      "mean_delta": 0.0004948029538671355,
+      "delta_bootstrap_95_ci": [
+        -0.0009304432086752024,
+        0.002303950038110913
+      ]
+    },
+    "cldice": {
+      "n_images": 49,
+      "mean_delta": 0.0008253075887088863,
+      "delta_bootstrap_95_ci": [
+        -0.0007784399870568314,
+        0.002822529669186118
+      ]
+    },
+    "reference_apls": {
+      "n_images": 49,
+      "mean_delta": 0.05491803397964094,
+      "delta_bootstrap_95_ci": [
+        0.03796697337925015,
+        0.07446341372151023
+      ]
+    }
+  }
+}
